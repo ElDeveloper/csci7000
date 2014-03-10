@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <link href="{{ url_for('static', filename='bootstrap.css') }}" rel="stylesheet">
+    <script src="{{ url_for('static', filename='jquery-1.9.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='holder.js') }}"></script>
+    <title>My Webpage</title>
+</head>
+<body>
+<div class="jumbotron">
+    |
+    {% for item in navigation %}
+        <a href="{{ item.href }}">{{ item.caption }}</a>
+        {{ item.separator }}
+    {% endfor %}
+    |
+    <h1>My Webpage</h1>
+    {{ a_variable }}
+</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script></head>
+<style type="text/css">
+img{
+
+    height: 200px !important;
+    font-size: 52px;
+    text-align: center;    
+    font-family: "trebuchet ms", sans-serif;    
+}
+.carousel-control.left, .carousel-control.right {
+  background-image: none
+}
+
+</style>
+<script>  
+$(function ()  
+{ $("#example").popover();  
+});  
+</script>
+<script>
+  $(document).ready(function(){
+    $('.carousel').carousel();
+  });
+</script>
+<body>
+  <title>Lonelymachines</title>
+  <div class="container">
+    <!--nav bar-->
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Lonelymachines</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Login</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!-- How It Works -->
+    <div class="col-xs-6">
+      <div class = "row">
+        <h1>Find youself another robot!</h1>
+        <UL id="workslist">
+          <li><h4>Want someone to share features with?</h4></li>
+          <li><h4>Overclock your system by falling in love with someone</h4></li>
+        </UL>
+      </div>
+    </div><!-- How It Works -->
+    <!-- sign up -->
+    <div class="col-xs-6"> 
+    <div class="form-group">
+
+       <label class="control-label">Name</label>
+       <input type="text" class="form-control" id="inputSuccess1">
+
+       <label class="control-label">Architecture</label>
+       <input type="text" class="form-control" id="inputSuccess1">
+
+       <label class="control-label">OS</label>
+       <input type="text" class="form-control" id="inputSuccess1">
+
+       <label class="control-label">License</label>
+       <input type="text" class="form-control" id="inputSuccess1">
+
+
+
+     <button type="button" class="btn btn-default">Start dating</button>
+    </div><!-- sign up -->
+  </div> <!-- container -->
+</body>
+</html>
